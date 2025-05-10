@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
-  # Only allow modern browsers supporting webp images, web push, badges, import maps, CSS nesting, and CSS :has.
-  allow_browser versions: :modern
+  def home
+    render html: "<h1>Welcome to the Home Page</h1>".html_safe
+  end
 end
